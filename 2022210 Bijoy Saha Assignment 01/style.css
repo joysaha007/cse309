@@ -1,0 +1,199 @@
+body {
+    background-color: #85C1E9;
+    font-family: Arial, 'Times New Roman', Times, serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.main {
+    background-color: white;
+    margin: 6%;
+}
+
+.logo {
+    text-align: center;
+}
+
+.p,
+.c,
+.w {
+    background-color: #f07167;
+}
+
+.t,
+.c1,
+.lec {
+    background-color: #fed9b7;
+}
+
+.im {
+    background-color: yellow;
+}
+
+p,
+li {
+    font-weight: normal;
+}
+
+.head {
+    text-align: center;
+    color: #0081a7;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    width: 400px;
+    height: 150px;
+    margin-left: 27%;
+}
+
+.po1 {
+    background-color: #f52f57;
+}
+
+.po2 {
+    background-color: #f49e4c;
+}
+
+.po3 {
+    background-color: #f5ee9e;
+}
+
+.po9 {
+    background-color: #3b8ea5;
+}
+
+.ll {
+    background-color: #f2d492
+}
+
+.a {
+    background-color: #f29559;
+}
+
+.dom {
+    background-color: #00798c;
+}
+
+.cog {
+    background-color: #598392;
+}
+
+.psy {
+    background-color: #00a896;
+}
+
+.mf {
+    color: red;
+}
+
+#logo {
+    height: 200px;
+    width: 300px;
+}
+
+.heading {
+    font-weight: bold;
+}
+
+ol.list {
+    list-style-type: decimal;
+}
+
+.ol1 {
+    margin: 0px 10px 0px 10px;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+ol.l {
+    list-style-type: decimal;
+}
+
+ol.alpha {
+    list-style-type: lower-alpha;
+}
+
+.aa {
+    background-color: green;
+}
+
+.ab {
+    background-color: #3da35d;
+}
+
+.ba {
+    background-color: #184e77;
+}
+
+.bb {
+    background-color: #1a759f;
+}
+
+.bc {
+    background-color: #168aad;
+}
+
+.ca {
+    background-color: #ff7b00;
+}
+
+.cb {
+    background-color: #ffb700;
+}
+
+.cc {
+    background-color: #ffea00;
+}
+
+.da {
+    background-color: #d8572a;
+}
+
+.db {
+    background-color: #c32f27;
+}
+
+.f {
+    background-color: red;
+}
+
+.co {
+    background-color: #f2d492;
+}
+
+.co1 {
+    background-color: #f29559;
+    ;
+}
+
+.co2 {
+    background-color: #b7b7a4;
+}
+
+.co3 {
+    background-color: #a5a58d;
+}
+
+.co4 {
+    background-color: #ddbea9;
+}
+
+.co5 {
+    background-color: #cb997e;
+}
+
+.co6 {
+    background-color: #6b705c;
+}
