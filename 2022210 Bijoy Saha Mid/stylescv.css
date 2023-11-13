@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+body {
+    background-image: linear-gradient(#636162, #b1afaf);
+    height: 200vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    background-color: white;
+    height: auto;
+    width: 850px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+}
+
+.left {
+    background-color: #fbb03b;
+    width: 240px;
+    height: 100%;
+    float: left;
+}
+
+.right {
+    width: 610px;
+    height: 1110px;
+    float: left;
+}
+
+.profile-img {
+    height: 200px;
+    width: 200px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    border: 10px solid #fbb03b;
+    box-shadow: 6px 7px 9px 5px #fbb03b73;
+}
+
+.profile-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.box-1 {
+    position: relative;
+}
+
+.heading {
+    background-color: #4d4d4d;
+    padding: 10px;
+    color: #fbb03b;
+    text-align: left;
+    padding-left: 20px;
+    margin-right: -25px;
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    width: 37px;
+    height: 22px;
+    background-color: #5a5959;
+    left: 227px;
+    top: 33px;
+    transform: rotate(130deg);
+    z-index: -1;
+}
+
+.p1 {
+    padding: 9px 10px;
+    font-size: 11px;
+}
+
+.icon1 {
+    font-size: 16px!important;
+    padding-right: 10px!important;
+    vertical-align: sub;
+}
+
+.skill-container {
+    width: 90%;
+    background-color: #4d4d4d;
+    margin: 0px 10px;
+}
+
+.skill {
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+}
+
+.html {
+    width: 90%;
+    background-color: white;
+}
+
+.css {
+    width: 80%;
+    background-color: white;
+}
+
+.js {
+    width: 85%;
+    background-color: white;
+}
+
+.jquery {
+    width: 80%;
+    background-color: white;
+}
+
+.web {
+    width: 85%;
+    background-color: white;
+}
+
+.gra {
+    width: 70%;
+    background-color: white;
+}
+
+.pm {
+    width: 79%;
+    background-color: white;
+}
+
+.soft {
+    width: 90%;
+    background-color: white;
+}
+
+.tro {
+    width: 75%;
+    background-color: white;
+}
+
+.icon2 {
+    padding: 22px 15px;
+    font-size: 20px!important;
+    height: auto;
+    width: auto;
+}
+
+.name-div {
+    padding: 86px 0px 60px 55px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.name-div h1 {
+    margin-bottom: 10px;
+}
+
+.box-2 {
+    padding: 0px 50px;
+    margin-top: 30px;
+}
+
+.p2 {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 18px;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.icon3 {
+    vertical-align: bottom;
+    font-size: 21px!important;
+    color: #4d4d4d;
+}
+
+.p3 {
+    font-size: 13px;
+    word-spacing: 1px;
+    letter-spacing: 0px;
+    margin-top: 10px;
+}
+
+.p3 span {
+    color: #ff9b00;
+    padding-left: 20px;
+}
+
+.f1 {
+    color: #39569c;
+}
+
+.f2 {
+    color: #3498DB;
+}
+
+.f3 {
+    color: #E74C3C;
+}
+
+.f4 {
+    color: #2E86C1;
+}
+
+.f5 {
+    color: #8E44AD;
+}
+
+.f6 {
+    color: #B03A2E;
+}
+
+.f7 {
+    color: #2874A6;
+}
+
+.f8 {
+    color: #196F3D;
+}
+
+.f9 {
+    color: #E74C3C;
+}
+
+.f10 {
+    color: #4A235A;
+}
+
+.f11 {
+    color: #39569c;
+}
+
+.f12 {
+    color: #3498DB;
+}
+
+.f13 {
+    color: #39569c;
+}
+
+.f14 {
+    color: #D4AC0D;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+        margin: 0;
+        position: static;
+        transform: none;
+    }
+    .left,
+    .right {
+        width: 100%;
+        float: none;
+    }
+    .profile-img {
+        margin: 20px auto;
+    }
+    .box-1,
+    .box-2 {
+        padding: 0 20px;
+    }
+    .box-1 .heading::after {
+        left: 90%;
+        top: 50%;
+    }
+}
