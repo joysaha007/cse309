@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Weather</title>
+</head>
+
+<body onload="DefaultScreen()" style="background-color: #839192 ">
+    <div class="container ">
+        <div class="a2 m-4 ">
+            <div class="row">
+                <!-- First Column -->
+                <div class="col-md-6" style="background-image: url(bg.jpg); background-size: cover; height: 800px; background-position: center; background-repeat: no-repeat; border-radius: 10px; color:#F7F9F9 ">
+                    <div class="container mt-2">
+                        <ul class="list-unstyled d-flex justify-content-between">
+                            <li>
+                                <h1 class="ml-2" style="display: inline;">Forecast</h1>
+                            </li>
+                            <li class="p-2" style="border:1px solid #F1C40F; border-radius: 10px">
+                                <p>Current Location</p>
+                                <h3 id="location"></h3>
+                            </li>
+                        </ul>
+
+                        <div class="inputC" style="margin-top: 100px; text-align: center;">
+                            <h4>The Only Weather Forecast You Need</h4>
+
+                            <div class="container mt-3">
+                                <label for="searchInput" class="sr-only">Search</label>
+                                <input type="text" class="form-control form-control-sm border bg-transparent" id="searchInput" style="color: aliceblue;" placeholder="Enter Location ...">
+                                <button type="submit" class="btn btn-outline-warning mt-3" onclick="getInfo()">Search</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Second Column -->
+                <div class="col-md-6" style="background-color: white; border-radius: 10px; color:black">
+                    <h3 style="margin-top: 20px;">5 Days Weather Forecast</h3>
+
+                    <div class="container" style="text-align: center;">
+                        <div class="row" style="height: 250px;">
+                            <div class="col-md-2" style="background-color: white;  border-radius: 10px;">
+
+                            </div>
+                            <div class="col-md-8" style="background-color: #B2BABB; border: 1px solid yellow; border-radius: 10px;">
+                                <!-- Content for the first container in the first row -->
+                                <div class="row">
+                                    <div class="col-md-4" style="background-color: #B2BABB; border-radius: 10px;">
+                                        <p style="text-align: left;" id="day1">day1</p>
+                                        <p id="tem1">10'</p>
+                                        <img src="dots.png" id="img1"><br>
+                                        <p id="day1min">Loading</p>
+                                        <p id="day1max">Loading</p>
+                                    </div>
+                                    <div class="col-md-8" style="background-color: #B2BABB; border-radius: 10px;">
+                                        <div class="container mt-3">
+                                            <p id="humidity">Humidity</p>
+                                            <p id="visibility">Visibility</p>
+                                            <p id="main">Main</p>
+                                            <p id="description">Description</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2" style="background-color: white; border-radius: 10px;">
+
+                            </div>
+                        </div>
+                        <div class="row" style="height: 200px;">
+                            <div class="col-md-5 m-3" style="background-color: #B2BABB; border: 1px solid yellow; border-radius: 10px;">
+                                <!-- Content for the first container in the second row -->
+                                <p style="text-align: left;" id="day2">day2</p>
+                                <p id="tem2">10'</p>
+                                <img src="dots.png" id="img2"><br>
+                                <p id="day2min" style="display: inline-block;">Loading</p>
+                                <p class="ml-1" id="day2max" style="display: inline-block;">Loading</p>
+                            </div>
+                            <div class="col-md-5 m-3" style="background-color: #B2BABB; border: 1px solid yellow; border-radius: 10px;">
+                                <!-- Content for the second container in the second row -->
+                                <p style="text-align: left;" id="day3">day3</p>
+                                <p id="tem3">10'</p>
+                                <img src="dots.png" id="img3"><br>
+                                <p id="day3min" style="display: inline-block;">Loading</p>
+                                <p class="ml-1" id="day3max" style="display: inline-block;">Loading</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3" style="height: 200px;">
+                            <div class="col-md-5 m-3" style="background-color: #B2BABB; border: 1px solid yellow; border-radius: 10px;">
+                                <!-- Content for the first container in the third row -->
+                                <p style="text-align: left;" id="day4">day4</p>
+                                <p id="tem4">10'</p>
+                                <img src="dots.png" id="img4"><br>
+                                <p id="day4min" style="display: inline-block;">Loading</p>
+                                <p class="ml-1" id="day4max" style="display: inline-block;">Loading</p>
+                            </div>
+                            <div class="col-md-5 m-3 " style="background-color: #B2BABB; border: 1px solid yellow; border-radius: 10px;">
+                                <!-- Content for the second container in the third row -->
+                                <p style="text-align: left;" id="day5">day5</p>
+                                <p id="tem5">10'</p>
+                                <img src="dots.png" id="img5"><br>
+                                <p id="day5min" style="display: inline-block;">Loading</p>
+                                <p class="ml-1" id="day5max" style="display: inline-block;">Loading</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
